@@ -90,8 +90,6 @@ h1, h2, h3, h4, .company, .ingredient, .produce { color: #333; }
 #header ul li a { color: #4F250F; text-decoration: none; }
 #header ul li a:hover { color: #c43c22; }
 
-	
-
 #sup_pics {
 	float: left;
 	width: 310px;
@@ -101,8 +99,6 @@ h1, h2, h3, h4, .company, .ingredient, .produce { color: #333; }
 #sup_pics img { 
 	width: 275px;
 	}
-
-
 
 #kitchen_pics {
 	width: 350px;
@@ -116,21 +112,18 @@ h1, h2, h3, h4, .company, .ingredient, .produce { color: #333; }
 
 .supplier_list a { 
 	padding: 2px; 
-	line-height: 150%; 
 	/*This border is the same color as the background so I cannot be seen
 	It holds the place so that when the hover state adds a black border the text is not moved*/
 	border:1px dashed #FDF9D6; 
 	}
 
+.supplier_list h3 { margin: 12px 0px; }
+
 #supplier_map_canvas {
 	float: left;
-	margin: 6px 0px 0px 20px;
+	margin: 45px 0px 0px 20px;
 	padding: 15px;
 	}
-
-/*The JavaScript file generates a unordered list of links on it's own.  
-I didn't know how to disable this feature so I hide the list instead.*/
-#side_bar { display: none; }
 
 .infowindow p { margin: 2px 0; text-indent: 15px; }
 .infowindow a { margin-left: 15px; }

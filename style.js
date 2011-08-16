@@ -19,20 +19,20 @@ $(function() {
 
     $('.ingredient').append('&nbsp; &ndash; &nbsp;');
 
-    var items = $('.supplier_list li').get();
-    items.sort(function(a,b){ 
-      var keyA = $(a).text();
-      var keyB = $(b).text();
-
-      if (keyA < keyB) return -1;
-      if (keyA > keyB) return 1;
-      return 0;
-    });
-    
-    var ul = $('.supplier_list');
-    $.each(items, function(i, li){
-      ul.append(li);
-    });
+        // var items = $('.supplier_list li').get();
+        // items.sort(function(a,b){ 
+        //   var keyA = $(a).text();
+        //   var keyB = $(b).text();
+        // 
+        //   if (keyA < keyB) return -1;
+        //   if (keyA > keyB) return 1;
+        //   return 0;
+        // });
+        //     
+        // var ul = $('.supplier_list');
+        // $.each(items, function(i, li){
+        //   ul.append(li);
+        // });
 });
 
 
