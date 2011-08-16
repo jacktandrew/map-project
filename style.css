@@ -1,0 +1,225 @@
+html { height: 100%; }
+
+body {
+	height: 100%; 
+	margin: 0px; 
+	padding: 10px; 
+	background: #4F250F;
+	font-family: garamond;
+	color: #444;
+	line-height: 133%;
+	}
+
+#wrapper { 
+	margin-top: 10px; 
+	margin-bottom: 50px; 
+	margin-left: auto; 
+	margin-right: auto; 
+	background: #fdf9d6; 
+	border-radius: 35px; 
+	width: 1000px; 
+	}
+
+a { text-decoration: none;	color: #444; }
+
+p { text-indent: 25px; margin: 20px 0; }
+
+li, ul { list-style-type: none; margin: 3px 0 0 0; padding: 0; }
+
+h1, h2, h3 { font-family: arial; }
+
+h4 { font-weight: normal; }
+
+h1, h2, h3, h4, .company, .ingredient, .produce { color: #333; }
+
+.quote, .caption { color: #222; }
+
+.quote, .caption, #supplier_map_canvas, .supplier_list a:hover {
+	border: 1px dashed #333;
+	background: #CCC9AD;
+	}
+
+.quote { 
+	font-size: 1.05em;
+	font-style: italic; 
+	display: block; 
+	padding: 10px 15px; 
+	width: 450px;
+	line-height: 150%;
+	text-align: center;
+	}
+	
+.caption {
+	margin: 100px 0 0 0;
+	padding: 15px;
+	}
+
+.caption h4 { margin:0 10px; }
+
+#farm_wrapper, #sup_text_wrapper, #kitchen_wrapper { margin-left: 75px; }
+
+#sup_text_wrapper { height: 1140px; margin-top: 50px; }
+
+#kitchen_wrapper { height: 675px; } 
+
+#sup_text, .supplier_list, #kitchen_list { float: left;}
+
+#kitchen_text, #kitchen_list, #farm_text, #sup_text, .supplier_list { margin: 10px; width: 475px; }
+
+#header { text-align: right; padding-right: 20px; }
+#header img:first-child { margin: 0; z-index: -1; }
+#logo { width: 200px; margin: -10px 50px 0px 0px; }
+#header h3 { color: #4F250F; margin: 0px 40px; }
+#page_name { float: left; margin: 50px 0 0 50px; }
+.hash-marks { 
+	background-image:url('images/dash.png');
+	background-repeat:repeat-x;
+	height: 5px;
+	width: 1010px;
+	margin: 10px 0px 10px -15px;
+	}
+
+#header ul li { 
+	font-size: 22px;
+	font-family: arial;
+	display: inline;
+	margin: 20px;
+	width: 200px;
+	}
+
+#header ul li a { color: #4F250F; text-decoration: none; }
+#header ul li a:hover { color: #c43c22; }
+
+	
+
+#sup_pics {
+	float: left;
+	width: 310px;
+	margin: -20px 0 0 60px;
+	}
+
+#sup_pics img { 
+	width: 275px;
+	}
+
+
+
+#kitchen_pics {
+	width: 350px;
+	float: left;
+	margin: -83px 0 0 45px;
+	}
+
+#kitchen_pics img {
+	width: 318px;
+	}
+
+.supplier_list a { 
+	padding: 2px; 
+	line-height: 150%; 
+	/*This border is the same color as the background so I cannot be seen
+	It holds the place so that when the hover state adds a black border the text is not moved*/
+	border:1px dashed #FDF9D6; 
+	}
+
+#supplier_map_canvas {
+	float: left;
+	margin: 6px 0px 0px 20px;
+	padding: 15px;
+	}
+
+/*The JavaScript file generates a unordered list of links on it's own.  
+I didn't know how to disable this feature so I hide the list instead.*/
+#side_bar { display: none; }
+
+.infowindow p { margin: 2px 0; text-indent: 15px; }
+.infowindow a { margin-left: 15px; }
+.infowindow H3 { margin: 5px; font-size: 1.1em; } 
+
+
+.company, .ingredient {
+	font-weight: bold;
+	font-size: 1em;
+	}
+	
+.city {
+	font-style: italic;
+	font-size: .95em;
+	}
+	
+.produce {
+	font-size: .95em;
+	}
+	
+#location_side_bar a:hover { border: 1px solid black; }
+
+#location_map_wrapper { 
+	margin: 53px 0 0 -16px; 
+	border: 1px dashed black; 
+	padding: 10px;
+	float: left;
+	background: #fff;
+	border-radius: 10px; 
+	}
+	
+#location_side_bar { 
+	width: 550px; 
+	float: left; 
+	margin: 50px 15px 0 15px;
+	}
+
+#location_side_bar a { 
+	display: block;
+	border: 1px dashed black;
+	background: white;
+	border-radius: 10px;
+	margin: 3px 3px 3px 3px;
+	width: 265px;
+	height: 180px;
+	float: left;
+	text-decoration: none; 
+	}
+
+#location_side_bar a img { 
+	position: absolute; 
+	margin: 20px 5px; 
+	width: 80px; 
+	}
+
+#location_side_bar a ul { 
+	margin: 14px 9px 14px 95px; 
+	font-size: 14px; 
+	}
+
+#location_side_bar a ul li { margin: 2px; } 
+
+#location_side_bar a ul li:first-child { font-weight: bold; font-size: 1.2em; } 
+
+#location_side_bar a ul li div { 
+	height:20px; 
+	width: 20px; 
+	border-radius: 10px; 
+	float:right; 
+	margin: 0; 
+	padding: 0; 
+	}
+
+#location_side_bar a:nth-child(1) ul li div { border:1px solid #00FF00; background: #a6ffa6; }
+#location_side_bar a:nth-child(2) ul li div { border:1px solid #E100FF; background: #f5a6ff; }
+#location_side_bar a:nth-child(3) ul li div { border:1px solid #FFFF00; background: #ffffa6; }
+#location_side_bar a:nth-child(4) ul li div { display: none; }
+#location_side_bar a:nth-child(5) ul li div { border:1px solid #FF0000; background: #ffa6a6; }
+
+.bubble p { margin:0; padding:0; text-indent:0; }
+.bubble p:first-child { font-weight: bold; font-size: 1.1em;}
+.facade { 
+	height: 80px; 	
+	}
+
+#hide_them { display: none;}
+#footer { text-align: center; }
+#footer img { 
+	margin: 50px 0 5px 0;
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg); 
+	}
